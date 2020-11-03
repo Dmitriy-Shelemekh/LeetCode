@@ -9,12 +9,12 @@ class TwoSumTest {
     private int[] ints = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
     private int target = 5;
     private Solution solution;
+    private int[] expected = new int[]{0, 3};
 
     @Test
     public void solutionOneTest() {
         solution = new SolutionOne();
 
-        int[] expected = new int[]{0, 3};
         int[] actual = runWithPerformanceMeter(solution);
 
         Assertions.assertArrayEquals(expected, actual);
@@ -24,7 +24,6 @@ class TwoSumTest {
     public void solutionTwoTest() {
         solution = new SolutionTwo();
 
-        int[] expected = new int[]{0, 3};
         int[] actual = runWithPerformanceMeter(solution);
 
         Assertions.assertArrayEquals(expected, actual);
