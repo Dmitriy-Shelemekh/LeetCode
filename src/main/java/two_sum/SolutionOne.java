@@ -37,7 +37,7 @@ public class SolutionOne implements Solution {
             }
         }
 
-        return null;
+        throw new IllegalArgumentException("No two sum solution");
     }
 
     private int findIndex(int[] ints, int target, int start) {
