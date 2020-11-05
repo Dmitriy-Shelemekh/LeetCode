@@ -29,6 +29,15 @@ class TwoSumTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
+    @Test
+    public void solutionTreeTest() {
+        solution = new SolutionTree();
+
+        int[] actual = runWithPerformanceMeter(solution);
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
     private int[] runWithPerformanceMeter(Solution solution) {
         int[] array = new int[]{};
         long startTime = System.currentTimeMillis();
