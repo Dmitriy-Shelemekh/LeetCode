@@ -1,1 +1,2 @@
-Решаю задачки с https://leetcode.com/
+# LeetCode
+...решаю задачки с leetcode.com
